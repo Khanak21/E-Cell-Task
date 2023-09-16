@@ -1,7 +1,6 @@
 import React from 'react'
 import "./Navbar.css"
 import { Link } from 'react-router-dom'
-import {RxHamburgerMenu} from "react-icons/rx"
 const Navbar = () => {
   return (
   

@@ -2,14 +2,15 @@
 *{
     box-sizing: border-box;
   }
-  @media (min-width: 1024px) {
+  
     .container{
+      /* flex mx-10 my-20 p-2 justify-center */
       width: 100%;
       border-radius: 15px;
       justify-content: space-around;
-      /* display: flex; */
-      display:grid;
-      grid-template-columns: auto auto auto;
+      display: flex;
+      /* display:grid; */
+      /* grid-template-columns: auto auto auto; */
       border:2px solid black;
       margin-top:3rem;
       }
@@ -25,33 +26,53 @@
       .logo{
         width:300px;
         height:300px;
+        /* height:50rem; */
+      }
+      .bottom{
+        align-items: center;
       }
     
+  @media (min-width: 768px) and (max-width: 1023px){
+    .rect{
+      width:90%;
+      max-width: 800px;
+      /* margin-top:5rem; */
+      /* display: block; */
+      margin: 1rem auto;
+      border-radius: 10px;
+    }
+    .bottom{
+      display:flex;
+      flex-direction: row;
+      max-width: 800px;
+      justify-content: space-between;
+      /* border:2px solid black; */
+      /* padding-right: 1%; */
+      margin:0 auto;
+      width:90%;
+    }
+    .logo{
+      width:49%;
+      height: auto;
+      /* min-width:340px; */
+      /* max-width: 340px; */
+      /* height: auto; */
+      margin-right: 0.5rem;
+    }
+
   }
-  @media (max-width:640px){
-    .container{
-      width: 100%;
-      border-radius: 15px;
-      /* justify-content: space-around; */
-      /* display: flex; */
-      display:block;
-      grid-template-columns: auto auto auto;
-      border:2px solid black;
-      margin-top:3rem;
-      }
-      
-      .colorbox{
-      width: 300px;
-      height: 300px;
-      border-radius: 15px;
-      background: linear-gradient(135.38deg, #3300FF 0%, #FA00FF 98.32%);
-      box-shadow: 0px 0px 4px 4px #00000040;
-      }
-      
-      .logo{
-        width:300px;
-        height:300px;
-      }
-    
+  @media (max-width:767px){
+    #check:checked~.three{
+      margin-top:100px;
+    }
+    /* .three{
+      margin-left: 10vw;
+      margin-right: 10vw;
+    } */
+    .three{
+      align-items: center;
+    }
   }
+  
+  
   

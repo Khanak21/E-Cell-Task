@@ -31,11 +31,12 @@ const Grid = () => {
   };
 
   return (
-    <div className='gridContainer mx-4'>
-      <div className='inner-cont'>
+    <div className='gridContainer'>
+      {/* <div className='inner-cont'> */}
         {Array.from({ length: 8 }, (ele, i) => (
           <div
             className={`grid-item ${i + 1}`}
+            
             style={{
               backgroundColor: gridStates[`g${i + 1}`] ? '#7A0000' : '#00407A',
             }}
@@ -46,7 +47,7 @@ const Grid = () => {
           className='grid-item last 9'
           onClick={handleclick9}
         ></div>
-      </div>
+      {/* </div> */}
     </div>
   );
 };
