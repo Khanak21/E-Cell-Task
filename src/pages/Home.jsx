@@ -11,6 +11,14 @@ import './Home.css'
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
 
 const Home= () => {
+    const [open,setOpen] = useState(false)
+    const handleClick = ()=>{
+        setOpen(!open)
+        const element = document.getElementById('header');
+        if(!open)element.classList.add('headerclose');
+        else element.classList.remove('headerclose');
+    }
+    
     const particlesInit = useCallback(async engine => {
         console.log(engine);
         // await loadFirePreset(engine);
@@ -27,11 +35,11 @@ const Home= () => {
 
     return (
         <div>
-         <header className="header">
+         <header className="header" id="header">
         <input type="checkbox" id="check"></input>
         <label htmlFor="check" className="icons">
-        <i className='bx bx-menu' id="menu-icon"></i>
-        <i className='bx bx-x' id="close-icon"></i>
+        <i className='bx bx-menu' id="menu-icon" onClick={handleClick}></i>
+        <i className='bx bx-x' id="close-icon" onClick={handleClick}></i>
         </label>
       <nav className='navbar'>
       <Link to="/home">Home</Link>
@@ -116,7 +124,7 @@ const Home= () => {
                 detectRetina: true,
             }}
         />
-         <div className='cont flex justify-center items-center h-screen'>
+         <div className='cont flex justify-center items-center h-[90vh]'>
          <img src={MYPIC} className='img h-[50vh] mx-8 rounded-lg z-100 relative'></img>
          <div className='relative'>
              <div className='border-s-4 p-2 m-2 text-4xl font-md z-10 name'>Name: Khanak Patwari</div>

@@ -5,14 +5,21 @@ import Grid from '../components/Grid/Grid'
 import './GridPage.css'
 import { Link } from 'react-router-dom'
 export const GridPage = () => {
+    const [open,setOpen] = useState(false)
+    const handleClick = ()=>{
+        setOpen(!open)
+        const element = document.getElementById('header');
+        if(!open)element.classList.add('headerclose');
+        else element.classList.remove('headerclose');
+    }
     
   return (
     <div>
-    <header className="header">
+    <header className="header" id="header">
         <input type="checkbox" id="check"></input>
         <label htmlFor="check" className="icons">
-        <i className='bx bx-menu' id="menu-icon" ></i>
-        <i className='bx bx-x' id="close-icon" ></i>
+        <i className='bx bx-menu' id="menu-icon" onClick={handleClick}></i>
+        <i className='bx bx-x' id="close-icon" onClick={handleClick}></i>
         </label>
     <nav className='navbar'>
       <Link to="/home">Home</Link>

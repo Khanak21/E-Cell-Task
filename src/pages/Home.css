@@ -25,6 +25,14 @@ button{
 button{
     font-size: large;
 }
+img{
+    animation-name: appear3;
+    animation-duration: 1.2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+
+}
 @keyframes appear{
     from{
         transform: translateY(-100%);
@@ -42,6 +50,16 @@ button{
     }
     to{
         transform: translateY(0%);
+       opacity: 1;
+    }
+}
+@keyframes appear3{
+    from{
+       
+        opacity: 0;
+    }
+    to{
+       
        opacity: 1;
     }
 }
