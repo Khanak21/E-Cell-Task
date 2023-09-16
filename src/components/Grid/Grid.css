@@ -10,7 +10,7 @@
     box-shadow: 0px 0px 4px 2px #00000040 inset;
 }
 .inner-cont{
-border:2px solid black;
+/* border:2px solid black; */
 height:240px;
 width:240px;
 border-radius: 15px;

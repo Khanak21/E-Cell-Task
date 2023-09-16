@@ -31,7 +31,7 @@ const Grid = () => {
   };
 
   return (
-    <div className='gridContainer'>
+    <div className='gridContainer mx-4'>
       <div className='inner-cont'>
         {Array.from({ length: 8 }, (ele, i) => (
           <div

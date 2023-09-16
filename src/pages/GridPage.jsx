@@ -7,9 +7,9 @@ export const GridPage = () => {
   return (
     <div>
     <Navbar/>
-      <div className='container'>
-      <div className='colorbox'></div>
-      <img src={logo} className='logo'></img>
+      <div className='flex mx-10 my-10 p-2 justify-center'>
+      <div className='colorbox mx-4 h-20'></div>
+      <img src={logo} className='logo mx-4'></img>
       <Grid/>
       </div>
     </div>
