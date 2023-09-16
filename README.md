@@ -8,8 +8,12 @@ This project was built as a task given for recruitment under Web department of E
 - Responsive Website design
 - Click on the grid-items one by one,their color will change to red.
 - When you click the bottom-right grid-item, in addition to the change of color,the previously clicked blocks will be changed back to red in the very sequence they were clicked
-- The Home page displays my name and registration No.
+- The Home page displays my name and registration no. with a catchy UI design
 - LinkedIn in navbar redirects you to my LinkedIn profile
+
+# Tech Stack
+-React JS
+-Tailwind CSS
 
 # Deployed Link
 Access the site here->https://khanak-ecell-web-task.netlify.app/
