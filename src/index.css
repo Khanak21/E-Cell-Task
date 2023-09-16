@@ -7,7 +7,7 @@
   box-sizing:border-box;
 }
 .header{
-  position:fixed;
+  position:relative;
   top:0;
   left:0;
   width:100%;
@@ -20,6 +20,7 @@
   z-index: 100;
   box-shadow: 0 0 4px 4px #00000040;
 }
+
 .navbar a{
   font-size:1.15rem;
   text-decoration: none;
@@ -66,11 +67,15 @@ i{
     height:0;
     background: white;
     box-shadow:0 4px 4px #00000040;
-    transition: .3s ease;
+    transition: 0.3s ease;
     overflow: hidden;
   }
   #check:checked~.navbar{
       height: 12rem;
+  }
+  #check:checked~.header{
+    height: 12rem;
+
   }
   .navbar a{
       display: block;

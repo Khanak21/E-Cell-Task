@@ -22,7 +22,9 @@ button{
     animation-fill-mode: forwards;
 
 }
-
+button{
+    font-size: large;
+}
 @keyframes appear{
     from{
         transform: translateY(-100%);
@@ -41,5 +43,22 @@ button{
     to{
         transform: translateY(0%);
        opacity: 1;
+    }
+}
+@media(max-width:1023px){
+    .cont{
+        flex-direction: column;
+    }
+
+}
+@media(max-width:768px){
+    .name,.reg{
+        font-size:medium;
+    }
+    button{
+        font-size:small;
+    }
+    image{
+        height:50vh;
     }
 }
