@@ -1,16 +1,16 @@
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import logo from './images/logo.png'
-import Grid from './components/Grid/Grid'
+import { GridPage } from './pages/GridPage';
+import {BrowserRouter, Route, Routes} from "react-router-dom"
+import Home from './pages/Home';
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <div className='container'>
-      <div className='colorbox'></div>
-      <img src={logo} className='logo'></img>
-      <Grid/>
-      </div>
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<GridPage/>}></Route>
+        <Route path="/home" element={<Home/>}></Route>
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }
