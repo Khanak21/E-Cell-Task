@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import './Grid.css';
 
 const Grid = () => {
@@ -11,24 +11,44 @@ const Grid = () => {
     g6: false,
     g7: false,
     g8: false,
+    g9:false,
   });
+  const [arr,setArr]=useState([])
 
   const handleGridClick = (id) => {
     const newStates = { ...gridStates };
     newStates[`g${id}`] = true;
     setGridStates(newStates);
+    setArr(prev=>([...prev,id]))
   };
-
+  
   const handleclick9 = () => {
-    for (let i = 1; i <= 8; i++) {
+    const newStates = { ...gridStates };
+    newStates[`g9`] = true;
+    setGridStates(newStates);
+    var n=9
+    setArr(prev=>([...prev,n]))
+    
+    setTimeout(()=>{
+      for (let i=0;i<arr.length;i++) {
       setTimeout(() => {
         setGridStates((prevState) => ({
           ...prevState,
-          [`g${i}`]: false,
+          [`g${arr[i]}`]: false,
         }));
-      }, i * 500); 
+      }, (i) * 200); 
     }
+    setTimeout(() => {
+      setGridStates((prevState) => ({
+        ...prevState,
+        [`g9`]: false,
+      }));
+    },(arr.length) * 200);
+  }
+  ,500)
+  setArr([])
   };
+
 
   return (
     <div className='gridContainer'>
@@ -46,6 +66,10 @@ const Grid = () => {
         <div
           className='grid-item last 9'
           onClick={handleclick9}
+          style={{
+            backgroundColor: gridStates[`g9`] ? '#7A0000' : '#00407A',
+          }}
+
         ></div>
       {/* </div> */}
     </div>
