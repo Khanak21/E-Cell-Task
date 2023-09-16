@@ -12,8 +12,8 @@ This project was built as a task given for recruitment under Web department of E
 - LinkedIn in navbar redirects you to my LinkedIn profile
 
 # Tech Stack
--React JS
--Tailwind CSS
+- React JS
+- Tailwind CSS
 
 # Deployed Link
 Access the site here->https://khanak-ecell-web-task.netlify.app/
