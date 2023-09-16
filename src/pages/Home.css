@@ -1,0 +1,45 @@
+.wrapper{
+    font-family: 'Source Code Pro', monospace;
+}
+.name{
+   
+    opacity: 0;
+    
+    animation: appear 1s forwards;
+
+}
+.reg{
+    animation-name: appear;
+    animation-duration: 1.2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+}
+button{
+    animation-name: appear2;
+    animation-duration: 1.2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes appear{
+    from{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+       opacity: 1;
+    }
+}
+@keyframes appear2{
+    from{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+       opacity: 1;
+    }
+}
