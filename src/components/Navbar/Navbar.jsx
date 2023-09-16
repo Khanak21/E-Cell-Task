@@ -6,7 +6,7 @@ const Navbar = () => {
         <ul className='navbar'>
             <li>Home</li>
             <li>Grid</li>
-            <li>LinkedIn</li>
+            <li><a href="https://www.linkedin.com/in/khanak-patwari/">LinkedIn</a></li>
         </ul>
     </div>
   )

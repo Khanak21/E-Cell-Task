@@ -1,4 +1,3 @@
-
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import logo from './images/logo.png'
@@ -11,11 +10,6 @@ function App() {
       <div className='colorbox'></div>
       <img src={logo} className='logo'></img>
       <Grid/>
-      
-
-      
-      
-
       </div>
     </div>
   );
