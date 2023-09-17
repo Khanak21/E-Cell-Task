@@ -1,54 +1,27 @@
-/* .gridContainer{
-    display:grid;
-    grid-template-columns: auto auto auto;
-    height: 300px;
-    width: 300px;
-    background: #D9D9D9;
-    border-radius: 15px;
-    gap:1rem;
-    box-shadow: 0px 0px 4px 2px #00000040 inset;
-    padding: 1rem;
 
-}
-.grid-item{
-    background: #00407A;
-    border-radius: 15px;
-
-
-}
-
-
-  
-
-@media (min-width: 768px) and (max-width: 1023px){
-    .gridContainer{
-        width: 48%;
-        height: auto;
-    }
-} */
 .gridContainer {
     display: grid;
     grid-template-columns: auto auto auto;
-    width: 300px; /* Set the initial width */
-    max-width: 100%; /* Allow it to grow with the parent */
+    width: 300px; 
+    max-width: 100%; 
     background: #D9D9D9;
     border-radius: 15px;
     gap: 1rem;
     box-shadow: 0px 0px 4px 2px #00000040 inset;
     padding: 1rem;
-    position: relative; /* Add relative positioning */
+    position: relative; 
   }
   
   .grid-item {
     background: #00407A;
     border-radius: 15px;
-    /* Preserve the square aspect ratio with percentage-based padding */
+   
     padding-bottom: 100%;
   }
   
-  /* Adjust the width in the media query */
+  
   @media (min-width: 768px) and (max-width: 1023px) {
     .gridContainer {
-      width: 49.5%; /* Adjust the width as needed */
+      width: 49.5%; 
     }
   }

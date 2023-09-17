@@ -4,14 +4,10 @@
   }
   
     .container{
-      /* flex mx-10 my-20 p-2 justify-center */
       width: 100%;
       border-radius: 15px;
       justify-content: space-around;
       display: flex;
-      /* display:grid; */
-      /* grid-template-columns: auto auto auto; */
-      /* border:2px solid black; */
       margin-top:2rem;
       }
       .colorbox{
@@ -25,7 +21,6 @@
       .logo{
         width:300px;
         height:300px;
-        /* height:50rem; */
       }
       .bottom{
         align-items: center;
@@ -35,8 +30,6 @@
     .rect{
       width:90%;
       max-width: 800px;
-      /* margin-top:5rem; */
-      /* display: block; */
       margin: 1rem auto;
       border-radius: 10px;
     }
@@ -48,17 +41,12 @@
       flex-direction: row;
       max-width: 800px;
       justify-content: space-between;
-      /* border:2px solid black; */
-      /* padding-right: 1%; */
       margin:0 auto;
       width:90%;
     }
     .logo{
       width:49%;
       height: auto;
-      /* min-width:340px; */
-      /* max-width: 340px; */
-      /* height: auto; */
       margin-right: 0.5rem;
     }
 

@@ -52,7 +52,6 @@ const Grid = () => {
 
   return (
     <div className='gridContainer'>
-      {/* <div className='inner-cont'> */}
         {Array.from({ length: 8 }, (ele, i) => (
           <div
             className={`grid-item ${i + 1}`}
@@ -71,7 +70,7 @@ const Grid = () => {
           }}
 
         ></div>
-      {/* </div> */}
+    
     </div>
   );
 };
