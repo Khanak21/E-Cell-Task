@@ -3,12 +3,9 @@ import { useState } from 'react';
 import MYPIC from '../images/MYPIC.jpg'
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
-import { Engine } from "tsparticles-engine";
-import { loadFirePreset } from "tsparticles-preset-fire";
 import { Link } from 'react-router-dom'
 import './Home.css'
-//import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+import { loadSlim } from "tsparticles-slim"; 
 
 const Home= () => {
     const [open,setOpen] = useState(false)
@@ -21,7 +18,6 @@ const Home= () => {
     
     const particlesInit = useCallback(async engine => {
         console.log(engine);
-        // await loadFirePreset(engine);
         
         await loadSlim(engine);
     }, []);
